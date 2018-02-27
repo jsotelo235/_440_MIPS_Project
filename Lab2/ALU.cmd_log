@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/Lab2/ALU.xst" -ofn "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/Lab2/ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/Lab2/ALU.xst" -ofn "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/Lab2/ALU.syr" 
