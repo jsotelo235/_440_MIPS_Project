@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/_440_MIPS_Project/Lab2/ALU_tb_isim_beh.exe" -prj "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/_440_MIPS_Project/Lab2/ALU_tb_beh.prj" "work.ALU_tb" "work.glbl" 

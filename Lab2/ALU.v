@@ -38,12 +38,12 @@ module ALU(A, B, ALU_Ctl, Zero_Flag, ALU_result);
 	output [31:0] ALU_result; //output
 	reg    [31:0] ALU_result; //output
 	
-	parameter AND = 0000,
-				 OR  = 0001,
-				 ADD = 0010,
-				 SUB = 0110,
-				 SLT = 0111,
-				 NOR = 1100;
+	parameter AND = 4'b0000,
+				 OR  = 4'b0001,
+				 ADD = 4'b0010,
+				 SUB = 4'b0110,
+				 SLT = 4'b0111,
+				 NOR = 4'b1100;
 				 
 	always@(*) begin
 		case(ALU_Ctl)

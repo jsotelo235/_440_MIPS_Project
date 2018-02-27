@@ -1,0 +1,21 @@
+ISim log file
+Running: C:\Users\pache\OneDrive\CSULB\Spring 2018\CECS 440\Labs\_440_MIPS_Project\Lab2\ALU_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/_440_MIPS_Project/Lab2/ALU_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+A=13852057, B=12345678, ALU_Ctl=0000, Zero_Flag=0, ALU_result=12040050 
+A=13852057, B=12345678, ALU_Ctl=0001, Zero_Flag=0, ALU_result=13b5767f 
+A=13852057, B=12345678, ALU_Ctl=0010, Zero_Flag=0, ALU_result=25b976cf 
+A=13852057, B=12345678, ALU_Ctl=0110, Zero_Flag=0, ALU_result=0150c9df 
+A=13852057, B=12345678, ALU_Ctl=0111, Zero_Flag=1, ALU_result=00000000 
+A=13852057, B=12345678, ALU_Ctl=1100, Zero_Flag=0, ALU_result=ec4a8980 
+A=13852057, B=12345678, ALU_Ctl=1111, Zero_Flag=1, ALU_result=00000000 
+Stopped at time : 800 ns : File "C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/_440_MIPS_Project/Lab2/ALU_tb.v" Line 119

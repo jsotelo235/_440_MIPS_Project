@@ -53,9 +53,71 @@ module ALU_tb;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-        
-		// Add stimulus here
-
+       
+		//AND: 		ALU_result =  A & B;
+		//	OR:  		ALU_result =  A | B;
+		//	ADD: 		ALU_result =  A + B;
+		//	SUB: 		ALU_result =  A - B;
+		//	SLT: 		ALU_result = (A < B) ? (32'h1) : (32'h0);
+		//	NOR: 		ALU_result = ~(A|B);
+		
+		// AND = 0000,
+		// OR  = 0001,
+		//	ADD = 0010,
+		//	SUB = 0110,
+		//	SLT = 0111,
+		//	NOR = 1100;
+		
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b0000; // AND
+		#100;
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+		
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b0001; // OR
+		#100;
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+		
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b0010; // ADD
+		#100;
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+		
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b0110; // SUB
+		#100;
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+		
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b0111; // SLT
+		#100;
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+					 
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b1100; // NOR
+		#100;
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+		
+		A = 32'h13852057;
+		B = 32'h12345678;
+		ALU_Ctl = 4'b1111; // Invalid ALU Operation
+		#100
+		$display("A=%h, B=%h, ALU_Ctl=%b, Zero_Flag=%h, ALU_result=%h ",
+					 A,    B,    ALU_Ctl,    Zero_Flag,    ALU_result);
+		$finish;
+		
 	end
       
 endmodule
