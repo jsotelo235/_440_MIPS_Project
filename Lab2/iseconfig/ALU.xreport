@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-02-27T09:11:48</DateModified>
+  <DateModified>2018-02-27T10:45:51</DateModified>
   <ModuleName>ALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/Lab2/iseconfig/ALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/Lab2</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/_440_MIPS_Project/Lab2/iseconfig/ALU.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/pache/OneDrive/CSULB/Spring 2018/CECS 440/Labs/_440_MIPS_Project/Lab2\</ImplementationReportsDirectory>
   <DateInitialized>2018-02-27T09:11:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
