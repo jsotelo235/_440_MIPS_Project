@@ -27,41 +27,32 @@
 // in student project work is subject to dismissal from  //
 // the class                                             //
 //*******************************************************//
-module ALU(A, B, ALU_Ctl, Zero, ALU_Result);
+module ALU_Control(FuncCode, ALU_op, ALU_Ctl);
 
-     input     [31:0]    A, B;
-     input     [3:0]     ALU_Ctl;       // operation selection control input
+     input     [5:0]     FuncCode;
+     input     [1:0]     ALU_op;
      
-     output              Zero;          // One 1-bit Zero result indicator 
-     output    [31:0]    ALU_Result;
+     output    [3:0]     ALU_Ctl;
      
-     reg                 Zero;
-     reg       [31:0]    ALU_Result;
+     reg       [3:0]     ALU_Ctl;
      
-     parameter AND = 4'b0000,
-               OR  = 4'b0001,
-               ADD = 4'b0010,
-               SUB = 4'b0110,
-               SLT = 4'b0111,
-               NOR = 4'b1100;
-     
-    always @(*)
+     always @(*)
      begin
-          case(ALU_Ctl)
-               AND       :    ALU_Result =  (A & B);
-               OR        :    ALU_Result =  (A | B);
-               ADD       :    ALU_Result =  (A + B);
-               SUB       :    ALU_Result =  (A - B);
-               SLT       :    ALU_Result =  (A < B) ? (32'h1) : (32'h0);
-               NOR       :    ALU_Result = ~(A | B);
-               default   :    ALU_Result =  32'bx;
+          //casex : Treats x and z as don't care.
+          casex({FuncCode,ALU_op})                      // R-Type Instructions
+               8'b100000_10   :    ALU_Ctl = 4'b0010;   // add
+               8'b100010_10   :    ALU_Ctl = 4'b0110;   // subtract
+               8'b100100_10   :    ALU_Ctl = 4'b0000;   // and
+               8'b100101_10   :    ALU_Ctl = 4'b0001;   // or
+               8'b101010_10   :    ALU_Ctl = 4'b0111;   // slt
+               8'b100111_10   :    ALU_Ctl = 4'b1100;   // nor
+                                             
+                                                        // I-Type Instructions
+               8'b000000_00   :    ALU_Ctl = 4'b0010;   // lw/sw
+               8'bxxxxxx_x1   :    ALU_Ctl = 4'b0110;   // branch
+               default        :    ALU_Ctl = 4'bxxxx;   // Invalid output
           endcase
-          
-          if(ALU_Result == 32'b0)
-               Zero = 1'b0;
-          else if(ALU_Result != 32'b0)
-               Zero = 1'b1;
-          else
-               Zero = 1'bx;
-     end  
+     end
+
+
 endmodule

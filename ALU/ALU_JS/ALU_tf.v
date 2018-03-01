@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 //*******************************************************//
 // This document contains information proprietary        //
 // to the CSULB student that created the                 //
@@ -27,41 +28,78 @@
 // in student project work is subject to dismissal from  //
 // the class                                             //
 //*******************************************************//
-module ALU(A, B, ALU_Ctl, Zero, ALU_Result);
 
-     input     [31:0]    A, B;
-     input     [3:0]     ALU_Ctl;       // operation selection control input
-     
-     output              Zero;          // One 1-bit Zero result indicator 
-     output    [31:0]    ALU_Result;
-     
-     reg                 Zero;
-     reg       [31:0]    ALU_Result;
-     
-     parameter AND = 4'b0000,
-               OR  = 4'b0001,
-               ADD = 4'b0010,
-               SUB = 4'b0110,
-               SLT = 4'b0111,
-               NOR = 4'b1100;
-     
-    always @(*)
-     begin
-          case(ALU_Ctl)
-               AND       :    ALU_Result =  (A & B);
-               OR        :    ALU_Result =  (A | B);
-               ADD       :    ALU_Result =  (A + B);
-               SUB       :    ALU_Result =  (A - B);
-               SLT       :    ALU_Result =  (A < B) ? (32'h1) : (32'h0);
-               NOR       :    ALU_Result = ~(A | B);
-               default   :    ALU_Result =  32'bx;
-          endcase
+module ALU_tf;
+
+	// Inputs
+	reg [31:0] A;
+	reg [31:0] B;
+	reg [3:0] ALU_Ctl;
+
+	// Outputs
+	wire Zero;
+	wire [31:0] ALU_Result;
+
+	// Instantiate the Unit Under Test (UUT)
+	ALU uut (
+		.A(A), 
+		.B(B), 
+		.ALU_Ctl(ALU_Ctl), 
+		.Zero(Zero), 
+		.ALU_Result(ALU_Result)
+	);
+
+	initial begin
+		// Initialize Inputs
+		A = 0;
+		B = 0;
+		ALU_Ctl = 0;
+
+		// Wait 100 ns for global reset to finish
+		#10;
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+
+		A = 32'h13969681;
+		B = 32'h12345678;
           
-          if(ALU_Result == 32'b0)
-               Zero = 1'b0;
-          else if(ALU_Result != 32'b0)
-               Zero = 1'b1;
-          else
-               Zero = 1'bx;
-     end  
+		ALU_Ctl = 4'b0000;
+		#100;
+          
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+
+		ALU_Ctl = 4'b0001;
+		#100;
+          
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+
+		ALU_Ctl = 4'b0010;
+		#100;
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+
+		ALU_Ctl = 4'b0110;
+		#100;
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);                   
+
+		ALU_Ctl = 4'b0111;
+		#100;
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+                   
+		ALU_Ctl = 4'b1100;
+		#100;
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+
+		ALU_Ctl = 4'b1111;
+		#100;
+          $display("A=%h, B=%h, ALU_Ctl=%b, Zero=%b, ALU_Result=%h",
+                   A, B, ALU_Ctl, Zero, ALU_Result);
+	end
+      
 endmodule
+
