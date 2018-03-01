@@ -1,3 +1,4 @@
+verilog work "ALU_Control.v"
 verilog work "ALU.v"
-verilog work "ALU_440_tb.v"
+verilog work "ALU_TOP_tb.v"
 verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
