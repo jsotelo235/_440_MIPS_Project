@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CSULB_Classes/CECS_440/Labs_Projects/ALU/ALU_JS/ALU_Top_tf_isim_beh.exe" -prj "D:/CSULB_Classes/CECS_440/Labs_Projects/ALU/ALU_JS/ALU_Top_tf_beh.prj" "work.ALU_Top_tf" "work.glbl" 
