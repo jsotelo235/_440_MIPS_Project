@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CSULB_Classes/CECS_440/Labs_Projects/Reg_File/Reg_File_JS/Register_File/Reg_File32_tf_isim_beh.exe" -prj "D:/CSULB_Classes/CECS_440/Labs_Projects/Reg_File/Reg_File_JS/Register_File/Reg_File32_tf_beh.prj" "work.Reg_File32_tf" "work.glbl" 
