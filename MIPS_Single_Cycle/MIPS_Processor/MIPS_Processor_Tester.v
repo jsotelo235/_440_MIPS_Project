@@ -86,6 +86,8 @@ module MIPS_Processor_Tester;
           $readmemh("../DMEM.dat", uut.mips_core.dmem.DM);
           $readmemh("../IMEM.dat", uut.mips_core.imem.IM);
           $readmemh("../REGFILE.dat", uut.mips_core.cpu.RF32.RF);
+
+		$display("SIMULATION BEGINS!!!!!");
 		clk = 0;
           while(!i) #1 i = i; // do nothing while i == 0
           $display("DUMPING REGISTERS");

@@ -1,0 +1,161 @@
+ISim log file
+Running: D:\CSULB_Classes\CECS_440\Labs_Projects\MIPS_Single_Cycle_Processor\MIPS_Processor\MIPS_Processor_Tester_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor_Tester_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+SIMULATION BEGINS!
+SIMULATION BEGINS!!!!!
+Finished circuit initialization process.
+At time    5.0ns
+beq $5, 412, 0x0006
+
+At time   15.0ns
+lw $10, 0x0000($5)
+
+At time   25.0ns
+lw $11, 0x0004($5)
+
+At time   35.0ns
+sub $9, $11, $10
+
+At time   45.0ns
+sw $9, 0x0010($5)
+
+At time   55.0ns
+add $5, $5, $4
+
+At time   65.0ns
+j 0x0000000
+
+At time   75.0ns
+add $0, $0, $0
+
+At time   85.0ns
+beq $5, 412, 0x0006
+
+At time   95.0ns
+lw $10, 0x0000($5)
+
+At time  105.0ns
+lw $11, 0x0004($5)
+
+At time  115.0ns
+sub $9, $11, $10
+
+At time  125.0ns
+sw $9, 0x0010($5)
+
+At time  135.0ns
+add $5, $5, $4
+
+At time  145.0ns
+j 0x0000000
+
+At time  155.0ns
+add $0, $0, $0
+
+At time  165.0ns
+beq $5, 412, 0x0006
+
+At time  175.0ns
+lw $10, 0x0000($5)
+
+At time  185.0ns
+lw $11, 0x0004($5)
+
+At time  195.0ns
+sub $9, $11, $10
+
+At time  205.0ns
+sw $9, 0x0010($5)
+
+At time  215.0ns
+add $5, $5, $4
+
+At time  225.0ns
+j 0x0000000
+
+At time  235.0ns
+add $0, $0, $0
+
+At time  245.0ns
+beq $5, 412, 0x0006
+
+At time  255.0ns
+add $0, $0, $0
+
+At time  265.0ns
+Error: Invalid Instruction
+
+DUMPING REGISTERS
+$0 = 0x00000000
+$1 = 0x00000000
+$2 = 0x00000000
+$3 = 0x00000000
+$4 = 0x00000004
+$5 = 0x0000000c
+$6 = 0x00000000
+$7 = 0x00000000
+$8 = 0x00000000
+$9 = 0x0000000c
+$10 = 0x0000000b
+$11 = 0x00000017
+$12 = 0x0000000c
+$13 = 0x00000000
+$14 = 0x00000000
+$15 = 0x00000000
+$16 = 0x00000000
+$17 = 0x00000000
+$18 = 0x00000000
+$19 = 0x00000000
+$20 = 0x00000000
+$21 = 0x00000000
+$22 = 0x00000000
+$23 = 0x00000000
+$24 = 0x00000000
+$25 = 0x00000000
+$26 = 0x00000000
+$27 = 0x00000000
+$28 = 0x00000000
+$29 = 0x00000000
+$30 = 0x00000000
+$31 = 0x00000000
+
+DUMPING DATA MEMORY
+DMEM[0x00000000] = 0x00
+DMEM[0x00000001] = 0x00
+DMEM[0x00000002] = 0x00
+DMEM[0x00000003] = 0x03
+DMEM[0x00000004] = 0x00
+DMEM[0x00000005] = 0x00
+DMEM[0x00000006] = 0x00
+DMEM[0x00000007] = 0x05
+DMEM[0x00000008] = 0x00
+DMEM[0x00000009] = 0x00
+DMEM[0x0000000a] = 0x00
+DMEM[0x0000000b] = 0x0b
+DMEM[0x0000000c] = 0x00
+DMEM[0x0000000d] = 0x00
+DMEM[0x0000000e] = 0x00
+DMEM[0x0000000f] = 0x17
+DMEM[0x00000010] = 0x00
+DMEM[0x00000011] = 0x00
+DMEM[0x00000012] = 0x00
+DMEM[0x00000013] = 0x02
+DMEM[0x00000014] = 0x00
+DMEM[0x00000015] = 0x00
+DMEM[0x00000016] = 0x00
+DMEM[0x00000017] = 0x06
+DMEM[0x00000018] = 0x00
+DMEM[0x00000019] = 0x00
+DMEM[0x0000001a] = 0x00
+DMEM[0x0000001b] = 0x0c
+SIMULATION ENDS!
+Stopped at time : 267 ns : File "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor_Tester.v" Line 100

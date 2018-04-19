@@ -1,0 +1,128 @@
+00
+00
+00
+20	// add $0, $0, $0 (NOP)
+10
+ac
+00
+06	// beq $5, $12, 0x0006 ...
+8c
+aa
+00
+00	// lw $10, 0($5)
+8c
+ab
+00
+04	// lw $11, 4($5)
+01
+6a
+48
+22	// sub $9, $11, $10
+ac
+a9
+00
+10	// sw $9, 16($5)
+00
+a4
+28
+20	// add $5, $5, $4
+08
+00
+00
+00	// j 0x00000000
+00
+00
+00
+20	// add $0, $0, $0 (NOP)
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction
+ff
+ff
+ff
+ff	// invalid instruction

@@ -1,0 +1,46 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor_Tester_isim_beh.exe -prj D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor_Tester_beh.prj work.MIPS_Processor_Tester work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/SignExtend_16to32.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/Reg_File32.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/Mux_2to1_by5.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/Mux_2to1_by32.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/ALU_Control.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/ALU.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/IMEM_128x8.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/DMEM_256x8.v" into library work
+WARNING:HDLCompiler:991 - "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/DMEM_256x8.v" Line 48: Event expressions must result in a singular type
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/CPU_EU.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/ControlUnit.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/ProgramCounter.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Core.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/Left_Shift.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor.v" into library work
+Analyzing Verilog file "D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor_Tester.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Left_Shift
+Compiling module ALU
+Compiling module Mux_2to1_by32
+Compiling module ProgramCounter
+Compiling module DMEM_256x8
+Compiling module ControlUnit
+Compiling module ALU_Control
+Compiling module Reg_File32
+Compiling module Mux_2to1_by5
+Compiling module SignExtend_16to32
+Compiling module CPU_EU
+Compiling module IMEM_128x8
+Compiling module MIPS_Core
+Compiling module MIPS_Processor
+Compiling module MIPS_Processor_Tester
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable D:/CSULB_Classes/CECS_440/Labs_Projects/MIPS_Single_Cycle_Processor/MIPS_Processor/MIPS_Processor_Tester_isim_beh.exe
+Fuse Memory Usage: 28792 KB
+Fuse CPU Usage: 1202 ms
