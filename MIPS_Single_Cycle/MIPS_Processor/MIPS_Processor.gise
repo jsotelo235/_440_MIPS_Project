@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CPU_EU_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MIPS_Core_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MIPS_Processor.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MIPS_Processor.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MIPS_Processor.lso"/>
@@ -48,6 +49,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MIPS_Processor_Tester_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MIPS_Processor_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MIPS_Processor_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MIPS_Processor_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MIPS_Processor_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MIPS_Processor_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MIPS_Processor_map.ncd" xil_pn:subbranch="Map"/>
@@ -82,7 +84,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524177652" xil_pn:in_ck="345942959298072607" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1524177652">
+    <transform xil_pn:end_ts="1524193252" xil_pn:in_ck="345942959298072607" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1524193252">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -101,11 +103,11 @@
       <outfile xil_pn:name="Reg_File32.v"/>
       <outfile xil_pn:name="SignExtend_16to32.v"/>
     </transform>
-    <transform xil_pn:end_ts="1524104423" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-994171873478094299" xil_pn:start_ts="1524104423">
+    <transform xil_pn:end_ts="1524193338" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-994171873478094299" xil_pn:start_ts="1524193338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524104423" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4496652585410554909" xil_pn:start_ts="1524104423">
+    <transform xil_pn:end_ts="1524193338" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4496652585410554909" xil_pn:start_ts="1524193338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -113,7 +115,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524177652" xil_pn:in_ck="345942959298072607" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1524177652">
+    <transform xil_pn:end_ts="1524193252" xil_pn:in_ck="345942959298072607" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1524193252">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -132,12 +134,9 @@
       <outfile xil_pn:name="Reg_File32.v"/>
       <outfile xil_pn:name="SignExtend_16to32.v"/>
     </transform>
-    <transform xil_pn:end_ts="1524177659" xil_pn:in_ck="345942959298072607" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5286162111850341961" xil_pn:start_ts="1524177652">
+    <transform xil_pn:end_ts="1524193345" xil_pn:in_ck="345942959298072607" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5286162111850341961" xil_pn:start_ts="1524193338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MIPS_Processor_Tester_beh.prj"/>
       <outfile xil_pn:name="MIPS_Processor_Tester_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -145,13 +144,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1524177660" xil_pn:in_ck="-3482619350618243827" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-504579289539740308" xil_pn:start_ts="1524177659">
+    <transform xil_pn:end_ts="1524193345" xil_pn:in_ck="-5170865952913917980" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-504579289539740308" xil_pn:start_ts="1524193345">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MIPS_Processor_Tester_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -188,6 +183,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MIPS_Processor.lso"/>
       <outfile xil_pn:name="MIPS_Processor.ngc"/>
       <outfile xil_pn:name="MIPS_Processor.ngr"/>
